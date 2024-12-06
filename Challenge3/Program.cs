@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\reports.txt");
+﻿string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\reports.txt");
 string content = File.ReadAllText(path);
 var reportsList = content.Split("\r\n");
 var numberOfSafeReports = 0;
